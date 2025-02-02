@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daylight Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daylight Dashboard</h1>
+    <div class="location-name" id="locationName">Unknown location</div>
+    <div class="location-status" id="locationStatus">Obtaining location...</div>
+    <div class="dashboard">
+      <div class="info-card">
+        <h2>Today's Daylight</h2>
+        <p>Day Length: <span id="dayLength">--:--</span></p>
+        <p>Sunrise: <span id="sunrise">--:--</span></p>
+        <p>Sunset: <span id="sunset">--:--</span></p>
+      </div>
+      <div class="info-card">
+        <h2>Comparison</h2>
+        <p>Shorter than longest day by: <span id="fromLongest">--:--</span></p>
+        <p>Longer than shortest day by: <span id="fromShortest">--:--</span></p>
+        <p>Daily change: <span id="dailyChange">--</span> minutes</p>
+      </div>
+      <div class="info-card">
+        <h2>Sunrise Extremes</h2>
+        <p>Earliest sunrise: <span id="earliestSunriseDate">--</span></p>
+        <p>At: <span id="earliestSunriseTime">--:--</span></p>
+        <p>Latest sunrise: <span id="latestSunriseDate">--</span></p>
+        <p>At: <span id="latestSunriseTime">--:--</span></p>
+      </div>
+      <div class="info-card">
+        <h2>Sunset Extremes</h2>
+        <p>Earliest sunset: <span id="earliestSunsetDate">--</span></p>
+        <p>At: <span id="earliestSunsetTime">--:--</span></p>
+        <p>Latest sunset: <span id="latestSunsetDate">--</span></p>
+        <p>At: <span id="latestSunsetTime">--:--</span></p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
